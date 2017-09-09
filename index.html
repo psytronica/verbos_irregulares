@@ -1,0 +1,146 @@
+<html>
+<head>
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+	<meta name="rights" content="Мара Черкасова, mara.scorpio@yandex.ru" />
+	<link rel="stylesheet" href="css/verbos.css" type="text/css" />
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/settings.js" type="text/javascript"></script>	
+	<script src="js/verbos.js" type="text/javascript"></script>
+	<script src="js/conjugaciones.js" type="text/javascript"></script>
+
+</head>
+<body>
+	
+<div id="ze_wrapper">
+<div id="ze_bg"><img src="img/bg.jpg"></div>
+<div id="ze_content">
+<div id="ze_top">
+<table id="ze_top_table">
+<tr>
+<td><img class="ze_top_img ze_top_prev" src="img/prev2.png"></td>
+<td><img class="ze_top_img ze_top_dosam" src="img/spain6.png"></td>
+<td id="ze_top_td_text">
+	<div id="screen_head_1" class="screen_head current">Verbos irregulares</div>
+	<div id="screen_head_2" class="screen_head">Настройки</div>
+	<div id="screen_head_3" class="screen_head">О программе</div>
+</td>
+<td><img class="ze_top_img ze_top_settings" src="img/settings3.png"></td>
+<td><img class="ze_top_img ze_top_question" src="img/question14.png"></td>
+<td><img class="ze_top_img ze_top_next" src="img/next2.png"></td>
+</tr>
+</table>
+</div>
+
+<div id="ze_screens" >
+
+<div class="ze_screen" > 
+
+<table id="ze_mtp_table">
+<tr>
+<td class="ze_td_list"><div class="ze_list_wrapper" id="ze_list_modo"></div></td>
+<td class="ze_td_lock"><img rel="modo" src="img/unlock2.png"></td>
+<td class="ze_td_list"><div class="ze_list_wrapper ze_list_yellow" id="ze_list_tiempo"></div></td>
+<td class="ze_td_lock"><img rel="tiempo" src="img/unlock2.png"></td>
+<td class="ze_td_list"><div class="ze_list_wrapper" id="ze_list_persona"></div></td>
+<td class="ze_td_lock"><img rel="persona" src="img/unlock2.png"></td>
+</tr>
+</table>
+
+<div id="ze_verbo"></div>
+
+<div id="ze_text_wrapper">
+<input id="ze_text" placeholder="escribe la forma correcta del verbo aquí" />
+</div>
+
+<div id="ze_nextback_wrapper">
+<input type="button" id="ze_anterior" value="<< Anterior" />
+<input type="button" id="ze_siguiente" value="Siguiente >>" />
+</div>
+
+<div id="respuesta_wrapper" class="hide">
+<table id="ze_respuesta_table">
+<tr>
+<td><button type="button" id="ze_show_answer" >
+	<span class="mostrar">Mostrar la respuesta</span>
+	<span class="ocultar">Ocultar la respuesta</span>
+</button></td>
+<td class="ze_respuesta_td">
+<div id="ze_answer"></div>
+<div id="ze_answer_arrow"></div>
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<div class="ze_screen"> 
+
+	<div id="ze_modos_wrapper">
+		<div id="ze_modos_tabs_wrapper">
+			<div id="ze_modos_tabs">
+
+			</div>
+			<div style="clear:both"></div>
+		</div>
+
+		<div id="ze_modos_content">
+
+		</div>
+	</div>
+
+</div>
+
+
+<div class="ze_screen"> 
+
+<div id="ze_prog_info">
+В центральной области отображается неопределенная форма глагола (черная), от которой надо образовать правильную форму согласно условиям в трех верхних списках. Ниже расположено поле ввода, в которое необходимо ввести правильный ответ в нужном наклонении, времени и лице.<br /> 
+В выпадающих списках над неопределенной формой указаны время, наклонение и лицо.<br />
+<br />
+<b style="color:#900">Внимание</b>: ответ вводится целиком, с учетом частицы se и отрицания (если таковые имеются).<br /> 
+Например:<br /> 
+
+<div class="ze_code_frag">
+	sobrevestirse - no te sobrevistas
+</div>
+Если у вас нет возможности ввести символы <b>é</b>, <b>ñ</b> и т.д., то вначале нажимаете символ <b>.</b> или <b>'</b> (точка или апостроф), а затем вводите буквы без ударения или тильды.<br />
+Таким образом:<br />
+<div class="ze_code_frag">
+	é =  'e или .e<br />
+	ñ =  'n или .n
+</div>
+Как только вы правильно введете слово, поле ввода подсветится <b style="color:green">зеленым цветом</b>.<br />
+Затем нажмите на <b>Siguiente >></b> или клавишу <b>Enter</b><br />
+<br />
+Чтобы вернуться к предыдущим словам, нажмите <b><< Anterior</b><br />
+<br />
+Хотите получить <b>подсказку</b>? Нажмите нижнюю кнопку <b>"Mostrar la respuesta"</b>.<br />
+Спрятать подсказку - нажмите <b>"Ocultar la respuesta"</b>.<br />
+<br />
+Чтобы "закрепить" и не менять наклонение, время или лицо, нажмите на <b>замочек</b>, который находится справа соотвествующего списка.<br />
+<br />
+<h2 style='text-align: center'>Настройки</h2>
+Чтобы настроить содержимое списков "время", "наклонение" и "лицо", нажмите на значок настроек на верхней панели.<br /> 
+Четыре вкладки соответствуют наклонениям в таблицах. На пересечении времен и лиц можно выбирать необходимые значения.<br />
+При нажатии на названия колонок с временами и лицами выделяется/снимается выделение со всего ряда/колонки.<br />
+При нажатии на кнопку <b>ALL</b> выделяется/снимается выделение со всей таблицы наклонения.<br />
+<br />
+По всем вопросам, предложениям и замечаниям по работе программы пишите на мой электронный адрес<br />
+<div class="ze_code_frag">		
+	mara.scorpio@yandex.ru
+</div>
+<div style="text-align:center"><i>Желаю вам успехов в изучении испанского языка!</i></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<input type="hidden" id="ze_img_lock_src" value="img/lock2.png" />
+<input type="hidden" id="ze_img_unlock_src" value="img/unlock2.png" />
+</body>
+</html>
